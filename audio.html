@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Audio Player with Image</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(153, 164, 173);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  margin: 10px 0;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0 0;
+}
+button {
+  background-color: rgb(135, 139, 139);
+  border-radius: 7px;
+  padding: 7px;
+}
+
+.rotate {
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+
+      <h1 class="main-heading"> Music Player</h1>
+      <img src="" id="img" class="img">
+      <strong id="trackName">Track Name</strong>
+
+      <audio id="audio">
+          <source src="" type="audio/mpeg">
+      </audio>
+
+      <div class="progress-container">
+        <input type="range" id="progress" value="0" min="0" max="100"/>
+        <span id="current-time">00:00</span>/<span id="duration">00:00</span>
+      </div>
+
+      <div class="buttons">
+        <button id="prev">Previous</button>
+        <button id="play" class="play-button">Play</button>
+        <button id="next">Next</button>
+        <button id="volume-up">Volume-Up</button>
+        <button id="volume-down">Volume-Down</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="audio.js"></script>
+</body>
+</html>
