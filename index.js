@@ -16,8 +16,8 @@ let audios = [
 ];
 
 let images = [
-  "manasu.webp",
-  "prema.jpg"
+  "https://tse1.mm.bing.net/th?id=OIP.jJ2Rl-IIKAbpsMN9h-bYhQHaEK&pid=Api&P=0&h=180",
+  "https://tse1.mm.bing.net/th?id=OIP.iVcKXG64rm621oILHvZt9AHaHa&pid=Api&P=0&h=220"
 ];
 
 let trackNames = [
